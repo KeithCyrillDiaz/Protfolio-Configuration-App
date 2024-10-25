@@ -50,41 +50,58 @@ export const AboutDetails = {
    TechnicalSkills: [
         {
             label: "TypeScript",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e",
+            Level: "Intermediate",
+            Experience: "8 months"
         },
         {
             label: "HTML",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FHTML.png?alt=media&token=d2880a88-dfe2-403c-ad1b-1057bd43972d",
+             Level: "Intermediate",
+            Experience: "8 months"
         },
         {
             label: "Tailwind",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTailwind.png?alt=media&token=1b17e184-7ce9-43bc-b782-0b83aa786888",
+             Level: "Intermediate",
+            Experience: "5 months"
         },
         {
             label: "React",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
-        },
-        {
-            label: "JavaScript",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
-        },
-        {
-            label: "Node",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
-        },
-        {
-            label: "Express",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
-        },
-        {
-            label: "React Native",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FReact.png?alt=media&token=08139f76-0370-4861-a4db-aab9c8a90f22",
+             Level: "Intermediate",
+            Experience: "5 months"
         },
         {
             label: "Next",
-            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FNextjs.jpg?alt=media&token=ef85f21a-9628-43a7-af60-f239cb08b941",
+             Level: "Novice",
+            Experience: "1 month"
         },
-
-
+        {
+            label: "JavaScript",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FJavascript.png?alt=media&token=3ffa0172-e2ef-4fa3-9fdf-1ebced579a42",
+             Level: "Intermediate",
+            Experience: "8 months"
+        },
+        {
+            label: "Node",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FNodejs.webp?alt=media&token=407df011-7e72-4052-9001-4368aeea68c7",
+             Level: "Intermediate",
+            Experience: "8 months"
+        },
+        {
+            label: "Express",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2Fexpress-js.png?alt=media&token=06b48fba-3f25-4007-bfcb-301b7bd89085",
+             Level: "Intermediate",
+            Experience: "8 months"
+        },
+        {
+            label: "React Native",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FReact%20Native.png?alt=media&token=0207f38a-9e13-4adc-a296-b8cf7dd8dadb",
+             Level: "Intermediate",
+            Experience: "8 months"
+        },
+     
    ]
 }
