@@ -1,0 +1,1 @@
+type statusTypes = "loading" | "idle"
