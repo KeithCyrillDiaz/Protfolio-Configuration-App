@@ -46,5 +46,45 @@ export const AboutDetails = {
             label: ["Awarded", "Best Thesis", "in Information System"]
           }
         ] as imagesTypes[]
-   }
+   },
+   TechnicalSkills: [
+        {
+            label: "TypeScript",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "HTML",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "Tailwind",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "React",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "JavaScript",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "Node",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "Express",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "React Native",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+        {
+            label: "Next",
+            uri: "https://firebasestorage.googleapis.com/v0/b/portfolio-keith.appspot.com/o/Logo%2FTypescript.png?alt=media&token=4e8b159e-2270-4c0d-9737-daf3cc93c02e"
+        },
+
+
+   ]
 }
