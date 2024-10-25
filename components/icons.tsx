@@ -4,7 +4,7 @@ import React from 'react';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { TouchableOpacity } from 'react-native';
-
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 
 type IconTypes = {
@@ -16,10 +16,11 @@ type IconTypes = {
 
 export const ProjectsIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
-         <AntDesign 
-         name="file1" 
-         size={size ?? 24} 
-         color={color ?? themeColor.defaultGreen}/>
+        <FontAwesome 
+        className={`${className}`}
+        name="file" 
+        size={size ?? 24} 
+        color={color ?? themeColor.defaultGreen}/>
     </TouchableOpacity>
    
 )
@@ -27,8 +28,10 @@ export const ProjectsIcon: React.FC<IconTypes> = ({color, size, className, onPre
 
 export const AboutIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
-         <AntDesign 
-         name="user" 
+
+         <FontAwesome5 
+         className={`${className}`}
+         name="user-alt" 
          size={size ?? 24} 
          color={color ?? themeColor.defaultGreen}/>
     </TouchableOpacity>
@@ -38,7 +41,7 @@ export const AboutIcon: React.FC<IconTypes> = ({color, size, className, onPress}
 export const HomeIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
          <Entypo
-            className={`${className} ml-[-.7vh]`}
+            className={`${className}`}
             name="home" 
             size={size ?? 24} 
             color={color ?? themeColor.defaultGreen}/>
