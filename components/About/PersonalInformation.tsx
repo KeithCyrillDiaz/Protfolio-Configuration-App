@@ -99,7 +99,9 @@ export const PersonalInformation: React.FC = () => {
 
     return(
         <>
-            <View className=" items-center">
+            <View 
+            style={{marginTop: 17}}
+            className="items-center">
                 <ProfilePicture className="h-[40vh] w-[40vh]"  uri={myImage}/>
             </View>
             <PersonalDetails/>
