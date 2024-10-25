@@ -5,14 +5,50 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { TouchableOpacity } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-
-type IconTypes = {
+export type IconTypes = {
     color?: string;
     size?: number;
     className?: string;
     onPress?: () => void;
 }
+
+export const MapMarkerIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+        <FontAwesome5 
+        className={`${className}`}
+        name="map-marker-alt" 
+        size={size ?? 24} 
+        color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
+
+
+export const EmailIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+        <MaterialCommunityIcons 
+        className={`${className}`}
+        name="email" 
+        size={size ?? 24} 
+        color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
+
+export const PhoneIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+        <FontAwesome5 
+        className={`${className}`}
+        name="phone-alt" 
+        size={size ?? 24} 
+        color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
+
+
 
 export const ProjectsIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
