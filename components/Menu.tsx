@@ -1,6 +1,7 @@
 import { Href, Link } from "expo-router";
 import React from "react";
-import { View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
+import { AboutIcon, HomeIcon, ProjectsIcon } from "./icons";
 
 
 
@@ -15,7 +16,7 @@ type MenuButtonTypes = {
 
 const MenuButton: React.FC<MenuButtonTypes> = ({children, focus, className, pathTo}) => {
    return (
-    <Link className={`${className} text-white text-[15px] ${focus ? "border-b-2 border-b-defaultGreen text-defaultGreen ": ""}`} href={pathTo}>{children}</Link>
+    <Link className={`${className} text-[2vh] font-montserratSemiBold ${focus ? "text-defaultGreen": "text-white"}`} href={pathTo}>{children}</Link>
    )
 }
 
@@ -24,25 +25,59 @@ const MenuButton: React.FC<MenuButtonTypes> = ({children, focus, className, path
 type ButtonTypes = {
     title: ButtonLabels,
     pathTo: Href<string | object>;
+    IconComponent: React.ComponentType<any>;
+  
 }
 
-export const Menu: React.FC<{currentPage: ButtonLabels}> = ({currentPage}) => {
+type MenuProps = {
+    currentPage: ButtonLabels;  
+    className?: string;
+    onPress: () => void;
+}
+
+
+export const Menu: React.FC<MenuProps> = ({
+    currentPage, 
+    className,
+    onPress
+}) => {
 
     const Buttons: ButtonTypes[] = [
         {
             title: "Home",
-            pathTo: "./",
-        }
+            pathTo: "/",
+            IconComponent: HomeIcon
+        },
+        {
+            title: "About",
+            pathTo: "/About",
+            IconComponent: AboutIcon
+        },
+        {
+            title: "Projects",
+            pathTo: "/Project",
+            IconComponent: ProjectsIcon
+        },
     ]
 
     return (
-        <View>
-            {Buttons.map((button, index) => {
-                const {title, pathTo} = button
-                return (
-                    <MenuButton pathTo={pathTo} focus={currentPage === title} >{title}</MenuButton>
-                )
-            })}
+        <View className={`${className} bg-defaultGray w-[52%] flex h-full absolute z-10 pt-[7vh]`}>
+            <TouchableOpacity onPress={onPress}>
+                <Text className="text-white font-montserratExtraBold text-[2.8vh] border-b-4 border-defaultGreen pb-2 mx-4">Menu</Text>
+            </TouchableOpacity>
+         
+            <View className="my-4">
+                {Buttons.map((button, index) => {
+                    const {title, pathTo, IconComponent} = button
+                    return (
+                       <View key={index} className={`${currentPage === title ? "bg-defaultDarkerGray " : ""} flex flex-row items-center gap-2 py-[1.7vh] w-full px-4`}>
+                         <IconComponent/>
+                         <MenuButton pathTo={pathTo} focus={currentPage === title} >{title}</MenuButton>
+                       </View>
+
+                    )
+                })}
+            </View>
         </View>
     )
 }

@@ -1,32 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@keyframes menuInAnimation {
-    0% {
-      transform: translateX(-100%); /* Start from the right */
-    }
-    100% {
-      transform: translateX(0); /* End at the original position */
-    }
-  }
-
-  @keyframes menuOutAnimation {
-    0% {
-      transform: translateX(0%); /* Start from the right */
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-100%); /* End at the original position */
-      opacity: 1;
-    }
-  }
-
-.menu-in-animation {
-    animation: menuInAnimation 0.3s ease-in-out;
-  }
-  
-.menu-out-animation {
-animation: menuOutAnimation 0.3s ease-in-out;
-}

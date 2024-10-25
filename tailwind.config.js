@@ -15,7 +15,7 @@ module.exports = {
       fontFamily: {
         montserratRegular: ['Montserrat-Regular', 'sans-serif'],
         montserratExtraBold: ['Montserrat-ExtraBold', 'sans-serif'],
-        montserratSemiBild: ['Montserrat-SemiBold', 'sans-serif']
+        montserratSemiBold: ['Montserrat-SemiBold', 'sans-serif']
       },
     },
   },
