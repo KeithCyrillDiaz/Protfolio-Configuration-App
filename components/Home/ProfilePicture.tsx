@@ -6,10 +6,11 @@ import { Loader } from "../loader";
 
 type ProfilePictureProps = {
     uri: string;
-    className?: string
+    className?: string;
+    rounded?: string
 }
 
-export const ProfilePicture: React.FC<ProfilePictureProps> = ({uri, className}) => {
+export const ProfilePicture: React.FC<ProfilePictureProps> = ({uri, className, rounded}) => {
     if(!uri) {
         return (
             <Loader/>
@@ -18,11 +19,11 @@ export const ProfilePicture: React.FC<ProfilePictureProps> = ({uri, className}) 
     return(
         <View className={`${className ?? "h-[27vh] w-[30vh]"} overflow-hidden flex items-center justify-center`}>
             <Image
-            source={{uri: uri}}
-            height={300}
-            width={300}
-            resizeMethod="auto"
-            resizeMode="contain"
+                source={{uri: uri}}
+                height={300}
+                width={300}
+                resizeMethod="auto"
+                resizeMode="contain"
             />
         </View>
     )
