@@ -7,7 +7,7 @@ import { TouchableOpacity } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-type IconTypes = {
+export type IconTypes = {
     color?: string;
     size?: number;
     className?: string;
