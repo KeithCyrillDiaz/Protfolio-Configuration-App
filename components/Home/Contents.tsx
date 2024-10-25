@@ -50,9 +50,11 @@ const Details: React.FC = () => {
             <Text className="text-white text-[5vh] font-montserratExtraBold">{HomeDetails.name}</Text>
             <Text className="text-defaultGreen text-[2vh]">{HomeDetails.role}</Text>
             <View className="flex flex-row items-center mb-2">
-                <Text className="text-white text-[1.7vh]">{HomeDetails.subtitle[0]}</Text>
-                <Text className="text-defaultGreen text-[1.7vh]">{HomeDetails.subtitle[1]}</Text>
-                <Text className="text-white text-[1.7vh]">{HomeDetails.subtitle[2]}</Text>
+                <Text className="text-white text-[1.7vh]">
+                    {HomeDetails.subtitle[0]}
+                    <Text className="text-defaultGreen">{HomeDetails.subtitle[1]}</Text>
+                    {HomeDetails.subtitle[2]}
+                </Text>
             </View>
             <Buttons/>
         </View>
