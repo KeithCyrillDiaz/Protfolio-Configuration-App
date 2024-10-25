@@ -14,7 +14,7 @@ type IconTypes = {
 }
 
 export const MenuBurgerIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
         <Entypo
         className={`${className} ml-[-.7vh]`}
         name="menu" 
