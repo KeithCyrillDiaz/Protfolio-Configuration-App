@@ -5,6 +5,7 @@ import { Container } from '@/components/Container'
 import { HeaderComponent } from '@/components/HeaderComponent'
 import { PersonalInformation } from '@/components/About/PersonalInformation'
 import { Education } from '@/components/About/Education'
+import { TechnicalSkill } from '@/components/About/TechnicalSkill'
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
         <HeaderComponent currentPage='About'/>
         <PersonalInformation/>
         <Education/>
+        <TechnicalSkill/>
       </ScrollView>
        
     </Container>
