@@ -6,12 +6,45 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import { TouchableOpacity } from 'react-native';
 
 
+
 type IconTypes = {
     color?: string;
     size?: number;
     className?: string;
     onPress?: () => void;
 }
+
+export const ProjectsIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+         <AntDesign 
+         name="file1" 
+         size={size ?? 24} 
+         color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
+
+
+export const AboutIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+         <AntDesign 
+         name="user" 
+         size={size ?? 24} 
+         color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
+
+export const HomeIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+         <Entypo
+            className={`${className} ml-[-.7vh]`}
+            name="home" 
+            size={size ?? 24} 
+            color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
 
 export const MenuBurgerIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
