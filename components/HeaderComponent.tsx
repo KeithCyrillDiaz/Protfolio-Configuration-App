@@ -1,6 +1,7 @@
 import { Href, Link } from "expo-router";
 import { View, Text } from "react-native";
 import { MenuBurger } from "./MenuBurger";
+import { MenuBurgerIcon } from "./icons";
 
 
 type LinkComponentProps = {
@@ -26,7 +27,7 @@ const LinkComponent: React.FC<LinkComponentProps> = ({
 export const HeaderComponent: React.FC<{currentPage: string}> = ({currentPage}) => {
     return(
         <View className="flex flex-row gap-7 text-white py-4 border-b-4 border-b-defaultGreen mx-5 px-4">
-           <MenuBurger/>
+            <MenuBurgerIcon/>
         </View>
     )
 }
