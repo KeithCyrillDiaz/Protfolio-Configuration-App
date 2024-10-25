@@ -7,7 +7,7 @@ import { HeaderComponent } from '@/components/HeaderComponent'
 export default function Project() {
   return (
     <Container>
-         <HeaderComponent currentPage='Project'/>
+         <HeaderComponent currentPage='Projects'/>
          <Text className='text-white'>Project</Text>
     </Container>
   )
