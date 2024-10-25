@@ -1,1 +1,2 @@
-type statusTypes = "loading" | "idle"
+type statusTypes = "loading" | "idle";
+type ButtonLabels = "Home" | "About" | "Projects";

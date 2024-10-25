@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import {Text, View} from 'react-native'
-import {Link} from 'expo-router'
+import {Text} from 'react-native'
 import { Container } from '@/components/Container'
 import { HeaderComponent } from '@/components/HeaderComponent'
-import { getFonts } from '@/functions/getfonts'
+import { getFonts} from '@/functions/getfonts'
 import { Loader } from '@/components/loader'
+import { Contents } from '@/components/Home/Contents'
+
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
     loadFonts()
   },[])
 
-  if(true) return (
+  if(status === 'loading') return (
     <Container>
       <Loader/>
     </Container>
@@ -33,7 +34,7 @@ export default function Home() {
   return (
     <Container>
         <HeaderComponent currentPage='Home'/>
-        <Text className='text-white'>Home</Text>
+        <Contents/>
     </Container>
   )
 }
