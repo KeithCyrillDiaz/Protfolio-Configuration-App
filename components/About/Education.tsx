@@ -12,6 +12,7 @@ const ImageLabel: React.FC<{label: string[]}> = ({label}) => {
             const isHighlightText = word === "Best Thesis" || word === "Cum Laude"
             return(
                 <H2 
+                key={index}
                 align="center"
                 className={`${isHighlightText ? "text-defaultGreen": "text-white"} text-center`}> 
                 {word} </H2>
