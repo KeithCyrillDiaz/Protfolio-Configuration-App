@@ -4,6 +4,7 @@ import { ProfilePicture } from "./ProfilePicture";
 import { HomeDetails } from "@/lib/constants";
 import { Button } from "../Buttons";
 import { themeColor } from "@/styles/styles";
+import { Loader } from "../loader";
 
 
 
@@ -17,6 +18,12 @@ const BottomRightCornerFrame: React.FC = () => (
 
 const FramePicture:React.FC<{className?: string}> = ({className}) => {
     const {profilePicture} = HomeDetails
+
+    if(!profilePicture) {
+        return (
+            <Loader/>
+        )
+    }
     return(
         <View className={`${className ?? "h-[31vh] w-[32vh]"} relative  items-center flex justify-center`}>
             <TopLeftCornerFrame/>
