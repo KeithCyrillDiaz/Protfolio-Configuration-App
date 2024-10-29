@@ -25,7 +25,7 @@ const ImageLabel: React.FC<{label: string[]}> = ({label}) => {
 const RenderImages: React.FC<{data: imagesTypes[]}> = ({data}) => {
     return(
         <View 
-        className="flex flex-wrap items-center">
+        className="flex flex-wrap items-center ">
             {data.map((item, index) => {
                 const {uri, label} = item
     
@@ -54,7 +54,10 @@ export const Education: React.FC = () => {
             <H1 className="text-defaultGreen">Education</H1>
             <H2>{course}: GPA: <H2 className="text-defaultGreen">{GPA}</H2></H2>
             <H2>{school}</H2>
-            <RenderImages data={images}/>
+            <View className="flex justify-center items-center">
+                <RenderImages data={images}/>
+            </View>
+            
         </View>
     )
 }

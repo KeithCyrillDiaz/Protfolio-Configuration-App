@@ -27,19 +27,44 @@ const Rating: React.FC<{progress: number}> = ({progress}) => {
     )
 }
 
+const ProjectBar: React.FC<{projectNumber: number}> = ({projectNumber}) => {
+    return(
+        <View 
+        style={{
+            gap: 4
+        }}
+        className="flex flex-row w-full h-[1vh] rounded-[7px] ">
+            {Array.from({length: 5}).map((_, index) => (
+                 <View key={index} className={`${index < projectNumber ? "bg-defaultGreen" : "bg-defaultGray"}  h-full w-[3.8vh] rounded-[7px]`}/>
+            ))}
+        </View>
+    )
+}
+
+const ProjectCard: React.FC<{projectNumber: number}> = ({projectNumber}) => {
+    return(
+        <View className="gap-2">
+            <Text className="text-white font-montserratExtraBold text-[1.5vh]">
+               Projects: <Text className="text-defaultGreen">{projectNumber}/5 completed</Text>
+            </Text>
+            <ProjectBar projectNumber={projectNumber}/>
+        </View>
+    )
+}
+
 
 const TechnicalSkillsCard: React.FC<{item: TechnicalSkillsTypes}> = ({item}) => {
-    const { Level, Experience, rating} = item
+    const { Level, Experience, url, title, projects} = item
     return(
         <View style={{marginTop: 17}}>
-            <LogoWithLabel item={item}/>
-            <Text className="text-white font-montserratSemiBold">
+            <LogoWithLabel item={{uri: url, label: title}}/>
+            <Text className="text-white font-montserratSemiBold text-[1.5vh]">
                 Level: <Text className="text-defaultGreen font-montserratExtraBold">{Level}</Text>
             </Text>
-            <Text className="text-white font-montserratSemiBold">
+            <Text className="text-white font-montserratSemiBold text-[1.5vh]">
                 Experience: <Text className="text-defaultGreen font-montserratExtraBold">{Experience}</Text>
             </Text>
-            <Rating progress={rating}/>
+            <ProjectCard projectNumber={projects.length}/>
         </View>
     )
 }
