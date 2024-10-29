@@ -14,7 +14,7 @@ type ParagraphProps = {
 
 const Paragraph: React.FC<ParagraphProps> = ({ children, className}) => {
     return(
-        <Text className={`${className ?? "text-white"} font-montserratExtraLight text-[10vh]`}>{children}</Text>
+        <Text className={`${className ?? "text-white"} font-montserratExtraLight text-[1.7vh]`}>{children}</Text>
     )
 }
 
