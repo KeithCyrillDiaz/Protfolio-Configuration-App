@@ -3,11 +3,11 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import { Loader } from "./loader";
 
-export const LogoWithLabel: React.FC<{item: {uri: string; label: string}}> = ({item}) => {
+export const LogoWithLabel: React.FC<{item: {uri: string; label: string}; width?: number}> = ({item, width}) => {
 
-    if(!item) {
+    if(!item || item.uri === "" || !item.uri) {
         return (
-            <Loader/>
+            <Loader className="h-[2vh]"/>
         )
     }
 
@@ -16,12 +16,12 @@ export const LogoWithLabel: React.FC<{item: {uri: string; label: string}}> = ({i
     return(
         <View
         style={{
-            width: "100%",
             borderRadius: 7,
             gap:12,
-            marginBottom: "3%"
+            marginBottom: "3%",
+            width: width ?? "100%"
         }}
-        className="flex flex-row bg-defaultGray items-center ">
+        className={`flex flex-row bg-defaultGray items-center `}>
             <Image
                 source={{uri: uri}}
                 height={50}
@@ -30,7 +30,7 @@ export const LogoWithLabel: React.FC<{item: {uri: string; label: string}}> = ({i
                     borderRadius:7
                 }}
             />
-            <Text className="text-white font-montserratExtraBold">{label}</Text>
+            <Text className="text-white font-montserratExtraBold text-[1.4vh]">{label}</Text>
         </View>
     )
 }

@@ -6,6 +6,8 @@ import { HeaderComponent } from '@/components/HeaderComponent'
 import { PersonalInformation } from '@/components/About/PersonalInformation'
 import { Education } from '@/components/About/Education'
 import { TechnicalSkill } from '@/components/About/TechnicalSkill'
+import { Experience } from '@/components/About/Experience'
+import { Hobbies } from '@/components/About/Hobbies'
 
 export default function About() {
   return (
@@ -18,6 +20,8 @@ export default function About() {
         <PersonalInformation/>
         <Education/>
         <TechnicalSkill/>
+        <Experience/>
+         <Hobbies/>
       </ScrollView>
        
     </Container>

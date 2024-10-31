@@ -7,12 +7,26 @@ import { TouchableOpacity } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
+
 export type IconTypes = {
     color?: string;
     size?: number;
     className?: string;
     onPress?: () => void;
 }
+
+
+
+export const CircleIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
+    <TouchableOpacity onPress={onPress}>
+        <FontAwesome 
+        className={`${className}`}
+        name="circle"  
+        size={size ?? 24} 
+        color={color ?? themeColor.defaultGreen}/>
+    </TouchableOpacity>
+   
+)
 
 export const MapMarkerIcon: React.FC<IconTypes> = ({color, size, className, onPress}) => (
     <TouchableOpacity onPress={onPress}>
@@ -127,3 +141,4 @@ export const LinkedInIcon: React.FC<IconTypes> = ({color, size, className, onPre
         color={color ?? themeColor.defaultGreen}  />
     </TouchableOpacity>
 )
+

@@ -1,5 +1,5 @@
 
-import { View, Linking, } from "react-native";
+import { View, Linking, TouchableOpacity, } from "react-native";
 import { FacebookIcon, GithubIcon, LinkedInIcon, MenuBurgerIcon } from "./icons";
 import { SocialsUrl } from "@/lib/constants";
 import React, {useState} from "react";
@@ -9,7 +9,6 @@ import { Menu } from "./Menu";
 export const HeaderComponent: React.FC<{currentPage: ButtonLabels}> = ({currentPage}) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
-    const [isOutAnimation, setIsOutAnimation] = useState<boolean>(false)
 
     return(
         <>
