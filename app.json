@@ -7,6 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "entryPoint": "./app/index.tsx",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -37,6 +38,9 @@
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "c444f04c-e2e1-407f-a051-00422d27dfba"
       }
     }
   }

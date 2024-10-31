@@ -1,3 +1,7 @@
+export const token = process.env.EXPO_PUBLIC_TOKEN
+export const baseUrl = process.env.EXPO_PUBLIC_API_BASE_URL_LOCAL
+
+
 export const SocialsUrl = {
     facebook: "https://www.facebook.com/keith.diaz.58",
     gitHub: "https://github.com/KeithCyrillDiaz",
@@ -138,5 +142,45 @@ export const AboutDetails = {
             ],
         },
      
-   ] as TechnicalSkillsTypes[]
+   ] as TechnicalSkillsTypes[],
+
+   Hobbies: [
+    {
+        title: "Valorant",
+        url: process.env.EXPO_PUBLIC_VALORANT,
+    },
+    {
+        title: "Mobile Legends",
+        url: process.env.EXPO_PUBLIC_MOBILE_LEGENDS,
+    },
+    {
+        title: "Genshin Impact",
+        url: process.env.EXPO_PUBLIC_GENSHIN_IMAPACT,
+    },
+    {
+        title: "Tiktok",
+        url: process.env.EXPO_PUBLIC_TIKTOK,
+    },
+    {
+        title: "Yotube",
+        url: process.env.EXPO_PUBLIC_YOUTUBE,
+    },
+    {
+        title: "Facebook",
+        url: process.env.EXPO_PUBLIC_FACEBOOK,
+    },
+    {
+        title: "Spotify",
+        url: process.env.EXPO_PUBLIC_SPOTIFY,
+    },
+    {
+        title: "Discord",
+        url: process.env.EXPO_PUBLIC_DISCORD,
+    },
+    {
+        title: "Netflix",
+        url: process.env.EXPO_PUBLIC_NETFLIX,
+    },
+
+]
 }

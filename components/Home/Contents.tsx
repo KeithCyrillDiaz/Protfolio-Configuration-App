@@ -21,7 +21,7 @@ const FramePicture:React.FC<{className?: string}> = ({className}) => {
 
     if(!profilePicture) {
         return (
-            <Loader/>
+            <Loader />
         )
     }
     return(
@@ -74,7 +74,7 @@ const Details: React.FC = () => {
 export const Contents: React.FC = () => {
 
     return(
-        <View className=" h-full flex items-center gap-7 py-[17vh]">
+        <View className="h-full flex items-center gap-7 py-[17vh]">
             <FramePicture />
             <Details/>
         </View>

@@ -22,6 +22,6 @@ export const H2: React.FC<H1Props> = ({children, className, align}) => {
             fontSize: 12,
             textAlign: align
         }}
-        className={`${className ?? "text-white"} text-[12px] font-montserratExtraBold`}>{children}</Text>
+        className={`${className ?? "text-white"} text-[3vh] font-montserratExtraBold`}>{children}</Text>
     )
 }

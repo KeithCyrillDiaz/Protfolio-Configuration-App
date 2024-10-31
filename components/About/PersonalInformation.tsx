@@ -12,9 +12,9 @@ type ParagraphProps = {
     className?: string;
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ children, className}) => {
+export const Paragraph: React.FC<ParagraphProps> = ({ children, className}) => {
     return(
-        <Text className={`${className ?? "text-white"} font-montserratExtraLight text-[1.7vh]`}>{children}</Text>
+        <Text className={`${className ?? "text-white text-[1.7vh]"} font-montserratExtraLight `}>{children}</Text>
     )
 }
 
@@ -69,7 +69,7 @@ const PersonalDetails: React.FC = () => {
     return(
         <View className="px-4 my-4 gap-2">
            <H1 className="text-defaultGreen">{fullName}</H1>
-           <Paragraph>
+           <Paragraph className="text-white text-justify">
                 {selfIntroduction.map((sentence, index) => {
                     const isHighlighted = sentence === "mobile " || sentence === "web ";
                     return (
@@ -88,7 +88,7 @@ const PersonalDetails: React.FC = () => {
                     </TextWithIcon>
                 )
             })}
-            <Paragraph>{intro2}</Paragraph>
+            <Paragraph className="text-white text-justify">{intro2}</Paragraph>
         </View>
     )
 }
